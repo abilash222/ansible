@@ -1,4 +1,3 @@
 ---
-  - shell: echo "installing memcached package" > /root/test.txt
+  - shell: 'echo "installing memcached package" > /root/test.txt'
   - shell: echo "installing memcached package"
-  - apt: name=tomcat7 state=present
