@@ -1,3 +1,3 @@
 ---
-  - shell: 'echo "installing memcached package" > /root/test.txt'
-  - shell: echo "installing memcached package"
+  - name: updating packages
+    shell: echo "Ansible Tower Testing....."
