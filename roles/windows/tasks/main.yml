@@ -2,6 +2,12 @@
   - name: Get system details
     setup:
 
+  - name: install_chocolatey
+    win_chocolatey:
+      name: chocolatey -y
+      state: present
+      ignore_errors: yes
+      
   - name: install and set java
     win_chocolatey:
       name: jdk7 -y
