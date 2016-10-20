@@ -9,10 +9,11 @@
       src: "C:\\Software\\eclipse-jee-luna-SR2-win32-x86_64.zip"
       dest: "C:\\Software\\tools\\eclipse"
       creates: "C:\\Software\\tools\\eclipse"
+
   - name: Create Eclipse desktop shortcut
     script: scripts/CreateEclipseDesktopShortcut.ps1
-  - name: Notepad Plus
-    win_chocolatey:
-      name: notepadplusplus.install
-      version: 6.9.2
-      state: present
+#  - name: Notepad Plus
+#    win_chocolatey:
+#      name: notepadplusplus.install
+#      version: 6.9.2
+#      state: present
