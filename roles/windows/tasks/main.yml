@@ -1,0 +1,23 @@
+---
+  - name: Get system details
+    setup:
+
+  - name: install and set java
+    win_chocolatey:
+      name: jdk7 -y
+      state: present
+
+  - name: set environment
+    win_environment:
+      state: present
+      name: JAVA_HOME
+      value: "{{ JAVA_HOME }}"
+      level: user 
+
+  - name: Install Apache Tomcat
+    win_chocolatey:
+      name: tomcat
+      version: 8.0.33
+      state: present
+
+  - include: eclipse.yml
