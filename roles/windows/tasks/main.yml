@@ -2,33 +2,33 @@
   - name: Get system details
     setup:
 
-  - name: install_chocolatey
-    win_chocolatey:
-      name: chocolatey -y
-      state: present
-      ignore_errors: yes
+#- name: install_chocolatey
+#  win_chocolatey:
+#    name: chocolatey -y
+#    state: present
+#    ignore_errors: yes
       
-  - name: install git
-    win_chocolatey:
-      name: git
-      state: present
+#- name: install git
+#  win_chocolatey:
+#    name: git
+#    state: present
       
-  - name: install and set java
-    win_chocolatey:
-      name: jdk7 -y
-      state: present
+#- name: install and set java
+#  win_chocolatey:
+#    name: jdk7 -y
+#    state: present
 
-  - name: set environment
-    win_environment:
-      state: present
-      name: JAVA_HOME
-      value: "{{ JAVA_HOME }}"
-      level: user 
+#- name: set environment
+#  win_environment:
+#    state: present
+#    name: JAVA_HOME
+#    value: "{{ JAVA_HOME }}"
+#    level: user 
 
-  - name: Install Apache Tomcat
-    win_chocolatey:
-      name: tomcat
-      version: 8.0.33
-      state: present
+#- name: Install Apache Tomcat
+#  win_chocolatey:
+#    name: tomcat
+#    version: 8.0.33
+#    state: present
 
   - include: eclipse.yml
