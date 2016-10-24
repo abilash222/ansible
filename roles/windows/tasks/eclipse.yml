@@ -24,6 +24,6 @@
   
   - name: unzip eclipse workspace
     win_unzip:  
-      src: "C:\\workspace.zip
+      src: "C:\\workspace.zip"
       dest: "C:\\Software\\tools\\eclipse\\workspace"
       creates: "C:\\Software\\tools\\eclipse\\workspace"
