@@ -20,5 +20,5 @@
 
   - name: copy eclipse workspace
     win_copy:  
-      src=\\CTSC00280492601\COESharedFolder\592581\workspace
+      src=\\CTSC00280492601\\COESharedFolder\\592581\\workspace
       dest=D:\\
