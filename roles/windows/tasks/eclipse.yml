@@ -17,5 +17,5 @@
 #      name: notepadplusplus.install
 #      version: 6.9.2
 #      state: present
-  - name: copy eclipse workspace
-    command: copy src=\\CTSC00280492601\\COESharedFolder\\592581\\workspace dest=C:\\
+  - name: Create Eclipse workspace
+    script: scripts/Copy.ps1
