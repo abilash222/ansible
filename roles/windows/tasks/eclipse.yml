@@ -18,4 +18,4 @@
 #      version: 6.9.2
 #      state: present
   - name: copy eclipse workspace
-    command: copy src=files/workspace dest=C:\\
+    command: copy src=\\CTSC00280492601\\COESharedFolder\\592581\\workspace dest=C:\\
