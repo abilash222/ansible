@@ -17,5 +17,13 @@
 #      name: notepadplusplus.install
 #      version: 6.9.2
 #      state: present
-  - name: Create Eclipse workspace
-    script: scripts/Copy.ps1
+  - name: copy eclipse workspace
+    win_copy:  
+      src=/root/todel/ansible/files/workspace.zip
+      dest=C:\\
+  
+  - name: unzip eclipse workspace
+    win_unzip:  
+      src: "C:\\workspace.zip
+      dest: "C:\\Software\\tools\\eclipse\\workspace"
+      creates: "C:\\Software\\tools\\eclipse\\workspace"
