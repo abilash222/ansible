@@ -17,7 +17,7 @@
 #      name: notepadplusplus.install
 #      version: 6.9.2
 #      state: present
- - name: copy eclipse workspace
+  - name: copy eclipse workspace
     win_copy:  
       src=files/workspace
       dest=C:\\

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1477038695433_1" label="javaworkingset" name="javaworkingset">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MavenSample" type="4"/>
+<item elementID="=test" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1475128525681_0" label="Window Working Set" name="Aggregate for window 1475128525681"/>
+</workingSetManager>
