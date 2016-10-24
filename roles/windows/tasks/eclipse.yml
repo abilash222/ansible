@@ -19,7 +19,7 @@
 #      state: present
   - name: copy eclipse workspace
     win_copy:  
-      src=/var/lib/awx/workspace.zip
+      src=files/workspace.zip
       dest=C:\\
   
   - name: unzip eclipse workspace
