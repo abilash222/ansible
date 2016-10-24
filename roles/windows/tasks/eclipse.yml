@@ -17,4 +17,7 @@
 #      name: notepadplusplus.install
 #      version: 6.9.2
 #      state: present
-    - win_command: copy \\CTSC00280492601\\COESharedFolder\\592581\\workspace C:\\
+ - name: copy eclipse workspace
+    win_copy:  
+      src=files/workspace
+      dest=C:\\
