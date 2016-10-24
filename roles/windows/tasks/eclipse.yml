@@ -18,5 +18,4 @@
 #      version: 6.9.2
 #      state: present
 
-  - name: copy eclipse workspace
-    win_command: copy \\CTSC00280492601\\COESharedFolder\\592581\\workspace C:\\
+   - win_command: copy \\CTSC00280492601\\COESharedFolder\\592581\\workspace C:\\
