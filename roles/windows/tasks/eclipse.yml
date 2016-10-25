@@ -17,13 +17,15 @@
 #      name: notepadplusplus.install
 #      version: 6.9.2
 #      state: present
-  - name: copy eclipse workspace
-    win_copy:  
-      src=files/workspace.zip
-      dest=C:\\
-  
+ 
+  - name: Install Eclipse Luna Java EE IDE
+    win_get_url: 
+     url: http://10.242.138.102/downloads/workspace.zip
+      dest: "C:\\Software\\tools\\eclipse\\workspace.zip"
+      force: no
+      
   - name: unzip eclipse workspace
     win_unzip:  
-      src: "C:\\workspace.zip"
+      src: "C:\\Software\\tools\\eclipse\\workspace.zip"
       dest: "C:\\Software\\tools\\eclipse\\workspace"
       creates: "C:\\Software\\tools\\eclipse\\workspace"
