@@ -21,7 +21,7 @@
   - name: Install Eclipse Luna Java EE IDE
     win_get_url: 
      url: http://10.242.138.102/downloads/workspace.zip
-      dest: "C:\\Software\\tools\\eclipse\\workspace.zip"
+     dest: "C:\\Software\\tools\\eclipse\\workspace.zip"
       force: no
       
   - name: unzip eclipse workspace
